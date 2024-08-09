@@ -18,13 +18,25 @@
 // console.log("copy object",obj2);
 // // console.log("object 3",obj3)
 
-function clock(){
-    setInterval(()=>{
-        const date=new Date();
-        console.log("number",date);
-        console.log("Date",date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear());
-        console.log("Time",date.getHours()+":"+date.getMinutes()+":"+date.getSeconds());
+// function clock(){
+//     setInterval(()=>{
+//         const date=new Date();
+//         console.log("number",date);
+//         console.log("Date",date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear());
+//         console.log("Time",date.getHours()+":"+date.getMinutes()+":"+date.getSeconds());
         
+//     },1000)
+// }
+// clock()
+
+function stopcounter(time){
+      let seconed=0;
+    const Timec=setInterval(()=>{
+        seconed=seconed+1;
+        console.log("Time counter",parseInt(seconed/60)+":"+seconed%60);
+        if(parseInt(seconed/60)==time){
+            clearInterval(Timec)
+        }
     },1000)
 }
-clock()
+stopcounter(1)
