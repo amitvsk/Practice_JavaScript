@@ -33,22 +33,31 @@
 //  console.log("object 3",obj3);
 
 
-function clock() {
-    setInterval(() => {
-        const date = new Date();
-        console.log("number", date);
+// function clock() {
+//     setInterval(() => {
+//         const date = new Date();
+//         console.log("number", date);
 
-        console.log("Date==>", date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear());
-        console.log("time==>", date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds());
+//         console.log("Date==>", date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear());
+//         console.log("time==>", date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds());
 
-    }, 1000);
+//     }, 1000);
+// }
+// clock()
+
+
+let user ={
+    name:"xyz",
+    age:18,
+    class:"bca",
+    gender :"male"
 }
-clock()
+console.log(Object.keys(user));
+console.log(Object.values(user));
 
+user.name ="rajat"
 
-
-
-
+console.log(user);
 
 
 

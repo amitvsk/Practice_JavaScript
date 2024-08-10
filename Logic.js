@@ -228,20 +228,20 @@
 
 //object 
 
-// let user = {
-//     name: "shumit",
-//     age:24,
-//     class:"BCA pass out",
-//     gender:"Male"
-// }
-// console.log(Object.keys(user));
-// console.log(Object.values(user));
+let user = {
+    name: "shumit",
+    age:24,
+    class:"BCA pass out",
+    gender:"Male"
+}
+console.log(Object.keys(user));
+console.log(Object.values(user));
 
-// console.log(typeof user);
+console.log(typeof user);
 
-// user.name="rajat"
+user.name="rajat"
 
-// console.log(user);
+console.log(user);
 
 // let obj1={
 //     name:"Anuj",
@@ -287,7 +287,7 @@
 //     setTimeout(()=>{
 //         callBack({id:id,name:"Rajat",age:28,gender:"male"})
 //     },10000)
-// }
+//}
 
 // function getUserData(userData){
 //     console.log("calling 2");
@@ -339,24 +339,24 @@
 // }
 // timeCounter()
 
-function stopClock(time) {
-  let seconed = 0;
-  const timec = setInterval(() => {
-    seconed = seconed + 1;
-    // console.log("minutes",seconed/60);
-    // console.log("seconed",seconed%60);
+// function stopClock(time) {
+//   let seconed = 0;
+//   const timec = setInterval(() => {
+//     seconed = seconed + 1;
+//     // console.log("minutes",seconed/60);
+//     // console.log("seconed",seconed%60);
 
-    console.log("Time Counter", parseInt(seconed / 60) + ":" + seconed % 60)
-    if (parseInt(seconed / 60) == time) {
-      clearInterval(timec)
-    }
-  }, 1000)
+//     console.log("Time Counter", parseInt(seconed / 60) + ":" + seconed % 60)
+//     if (parseInt(seconed / 60) == time) {
+//       clearInterval(timec)
+//     }
+//   }, 1000)
 
   // setTimeout(()=>{
   //     clearInterval(timec)
   // },time*1000*60)
 
-}
+//}
 
 // stopClock(1)
 
@@ -369,43 +369,43 @@ function stopClock(time) {
 //   }
 
 //   // Example: Set an alarm to go off in 5 seconds with a sound
-//   setAudioAlarm(5000, "This is your alarm!", "./assets/eminem-633310.mp3");
-const { exec } = require('child_process');
-const { countReset } = require('console');
-const { validateHeaderValue } = require('http');
+// //   setAudioAlarm(5000, "This is your alarm!", "./assets/eminem-633310.mp3");
+// const { exec } = require('child_process');
+// const { countReset } = require('console');
+// const { validateHeaderValue } = require('http');
 
-function play() {
-  const filePath = 'C:\\Users\\lenovo\\Desktop\\BCA Class\\assets\\eminem-63310.mp3';
-  const command = `start wmplayer "${filePath}"`;
+// function play() {
+//   const filePath = 'C:\\Users\\lenovo\\Desktop\\BCA Class\\assets\\eminem-63310.mp3';
+//   const command = `start wmplayer "${filePath}"`;
 
-  exec(command, (err) => {
-    if (err) {
-      console.error(`Error playing sound: ${err}`);
-      return;
-    }
-    console.log('Audio started playing');
-  });
-}
+//   exec(command, (err) => {
+//     if (err) {
+//       console.error(`Error playing sound: ${err}`);
+//       return;
+//     }
+//     console.log('Audio started playing');
+//   });
+// }
 
 
 
-function alertClock(hr, minutes) {
-  let aler = 0
-  const checkTinme = setInterval(() => {
-    const date = new Date();
-    console.log("Checking Time");
+// function alertClock(hr, minutes) {
+//   let aler = 0
+//   const checkTinme = setInterval(() => {
+//     const date = new Date();
+//     console.log("Checking Time");
 
-    if (date.getHours() == hr && date.getMinutes() == minutes & date.getSeconds() == 0) {
-      console.log("Alerm ringing")
-      play()
-    }
-    if (date.getHours() == hr && date.getMinutes() > minutes) {
-      clearInterval(checkTinme);
-      console.log("Stop alerm");
-    }
+//     if (date.getHours() == hr && date.getMinutes() == minutes & date.getSeconds() == 0) {
+//       console.log("Alerm ringing")
+//       play()
+//     }
+//     if (date.getHours() == hr && date.getMinutes() > minutes) {
+//       clearInterval(checkTinme);
+//       console.log("Stop alerm");
+//     }
 
-  }, 1000)
-}
+//   }, 1000)
+// }
 
 // alertClock(11, 6)
 
@@ -423,48 +423,48 @@ function alertClock(hr, minutes) {
 //     return a + b
 //   }
 // }
-// console.log(am(20)());
+// // console.log(am(20)());
 
-function add(a){
-  var count=0;
-  return{
-    increment:function(value){
-      count=count+value
-      return count
-    },
-    decrement:function(value){
-      count=count-value
-      return count
-    },
-    maltiply:function(value){
-      if(count==0){
-        return "your count value is zero"
-      }
-      if(value==0){
-        return "your input value is zero"
-      }
-      count=count*value
-      return count
-    },
-    devide:function(value){
-      if(count==0){
-        return "your count value is zero"
-      }
-      if(value==0){
-        return "your input value is zero"
-      }
-      count=count/value
-      return count
-    },
-    getcount:function(){
-      return count
-    }
-  }
-}
-let fun=add()
-fun.increment(20);
+// function add(a){
+//   var count=0;
+//   return{
+//     increment:function(value){
+//       count=count+value
+//       return count
+//     },
+//     decrement:function(value){
+//       count=count-value
+//       return count
+//     },
+//     maltiply:function(value){
+//       if(count==0){
+//         return "your count value is zero"
+//       }
+//       if(value==0){
+//         return "your input value is zero"
+//       }
+//       count=count*value
+//       return count
+//     },
+//     devide:function(value){
+//       if(count==0){
+//         return "your count value is zero"
+//       }
+//       if(value==0){
+//         return "your input value is zero"
+//       }
+//       count=count/value
+//       return count
+//     },
+//     getcount:function(){
+//       return count
+//     }
+//   }
+// }
+// let fun=add()
+//fun.increment(20);
 // fun.decrement(2);
 // console.log(fun.maltiply(2));
-console.log(fun.devide(2));
+//console.log(fun.devide(2));
 // console.log(fun.getcount());
 
