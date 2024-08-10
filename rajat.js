@@ -57,30 +57,42 @@
 
 // user.name ="rajat"
 
-// console.log(user);
+// // console.log(user);
 
 
-function login (email,passward){
-   if(!email) {
-    return ("please enter your email")
-   }
-   if(!passward){
-    return ("please enter your passward")
-   }
-   if(email=="rajatjha20070@gmail.com"){
-    if(passward=="90580"){
-        return ("succesfully login")
-    }else{ return ("passward is incorect" )}
+// function login (email,passward){
+//    if(!email) {
+//     return ("please enter your email")
+//    }
+//    if(!passward){
+//     return ("please enter your passward")
+//    }
+//    if(email=="rajatjha20070@gmail.com"){
+//     if(passward=="90580"){
+//         return ("succesfully login")
+//     }else{ return ("passward is incorect" )}
 
-   }else{
-return ("email id is not ragister")
-   }
+//    }else{
+// return ("email id is not ragister")
+//    }
+// }
+
+// console.log(login("rajatjha20070@gmail.com","90580"));
+
+
+function timeCounter() {
+    let minutes = 0;
+    let seconed = 0;
+    setInterval(() => {
+        seconed = seconed+1;
+        //console.log("minutes",seconed/60);
+        //console.log("seconed",second%60);
+        console.log("time counter", parseInt(seconed/60) + ":" + seconed % 60);
+
+
+    }, 1000);
 }
-
-console.log(login("rajatjha20070@gmail.com","90580"));
-
-
-
+timeCounter()
 
 
 

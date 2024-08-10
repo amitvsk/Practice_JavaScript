@@ -228,20 +228,20 @@
 
 //object 
 
-let user = {
-    name: "shumit",
-    age:24,
-    class:"BCA pass out",
-    gender:"Male"
-}
-console.log(Object.keys(user));
-console.log(Object.values(user));
+// let user = {
+//     name: "shumit",
+//     age:24,
+//     class:"BCA pass out",
+//     gender:"Male"
+// }
+// console.log(Object.keys(user));
+// console.log(Object.values(user));
 
-console.log(typeof user);
+// console.log(typeof user);
 
-user.name="rajat"
+// user.name="rajat"
 
-console.log(user);
+// console.log(user);
 
 // let obj1={
 //     name:"Anuj",
@@ -327,17 +327,17 @@ console.log(user);
 // }
 // clock();
 
-// function timeCounter(){
-//     let minutes=0;
-//     let seconed=0;
-//     setInterval(()=>{
-//         seconed=seconed+1;
-//         // console.log("minutes",seconed/60);
-//         // console.log("seconed",seconed%60);
-//         console.log("Time Counter",parseInt(seconed/60)+":"+seconed%60)
-//     },1000)
-// }
-// timeCounter()
+function timeCounter(){
+    let minutes=0;
+    let seconed=0;
+    setInterval(()=>{
+        seconed=seconed+1;
+        // console.log("minutes",seconed/60);
+        // console.log("seconed",seconed%60);
+        console.log("Time Counter",parseInt(seconed/60)+":"+seconed%60)
+    },1000)
+}
+timeCounter()
 
 // function stopClock(time) {
 //   let seconed = 0;
