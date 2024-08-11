@@ -80,23 +80,39 @@
 // console.log(login("rajatjha20070@gmail.com","90580"));
 
 
-function timeCounter() {
-    let minutes = 0;
-    let seconed = 0;
-    setInterval(() => {
-        seconed = seconed+1;
+// function timeCounter() {
+//     let minutes = 0;
+//     let seconed = 0;
+//     setInterval(() => {
+//         seconed = seconed+1;
+//         //console.log("minutes",seconed/60);
+//         //console.log("seconed",second%60);
+//         console.log("time counter", parseInt(seconed/60) + ":" + seconed % 60);
+
+
+//     }, 1000);
+// }
+// timeCounter()
+
+function stopClock(time){
+    let seconed=0;
+    
+    let timec=setInterval(() => {
+        seconed=seconed+1
         //console.log("minutes",seconed/60);
-        //console.log("seconed",second%60);
-        console.log("time counter", parseInt(seconed/60) + ":" + seconed % 60);
-
-
+        //console.log(("seconed",seconed%60));
+        console.log("timecounter",parseInt(seconed/60)+":"+ seconed%60);
+        
+        if(parseInt(seconed)==time) {
+clearInterval(timec)
+        }  
     }, 1000);
+    setTimeout(() => {
+        clearInterval(timec)
+    },time*1000*60 );
 }
-timeCounter()
 
-
-
-
+stopClock(20)
 
 
 

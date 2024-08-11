@@ -327,65 +327,39 @@
 // }
 // clock();
 
-function timeCounter(){
-    let minutes=0;
-    let seconed=0;
-    setInterval(()=>{
-        seconed=seconed+1;
-        // console.log("minutes",seconed/60);
-        // console.log("seconed",seconed%60);
-        console.log("Time Counter",parseInt(seconed/60)+":"+seconed%60)
-    },1000)
-}
-timeCounter()
-
-// function stopClock(time) {
-//   let seconed = 0;
-//   const timec = setInterval(() => {
-//     seconed = seconed + 1;
-//     // console.log("minutes",seconed/60);
-//     // console.log("seconed",seconed%60);
-
-//     console.log("Time Counter", parseInt(seconed / 60) + ":" + seconed % 60)
-//     if (parseInt(seconed / 60) == time) {
-//       clearInterval(timec)
-//     }
-//   }, 1000)
-
-  // setTimeout(()=>{
-  //     clearInterval(timec)
-  // },time*1000*60)
-
-//}
-
-// stopClock(1)
-
-// function setAudioAlarm(timeInMilliseconds, message, audioUrl) {
-//     setTimeout(() => {
-//     //   alert(message); // Display a message
-//       var audio = new Audio(audioUrl);
-//       audio.play(); // Play the audio
-//     }, timeInMilliseconds);
-//   }
-
-//   // Example: Set an alarm to go off in 5 seconds with a sound
-// //   setAudioAlarm(5000, "This is your alarm!", "./assets/eminem-633310.mp3");
-// const { exec } = require('child_process');
-// const { countReset } = require('console');
-// const { validateHeaderValue } = require('http');
-
-// function play() {
-//   const filePath = 'C:\\Users\\lenovo\\Desktop\\BCA Class\\assets\\eminem-63310.mp3';
-//   const command = `start wmplayer "${filePath}"`;
-
-//   exec(command, (err) => {
-//     if (err) {
-//       console.error(`Error playing sound: ${err}`);
-//       return;
-//     }
-//     console.log('Audio started playing');
-//   });
+// function timeCounter(){
+//     let minutes=0;
+//     let seconed=0;
+//     setInterval(()=>{
+//         seconed=seconed+1;
+//         // console.log("minutes",seconed/60);
+//         // console.log("seconed",seconed%60);
+//         console.log("Time Counter",parseInt(seconed/60)+":"+seconed%60)
+//     },1000)
 // }
+// timeCounter()
+
+function stopClock(time) {
+  let seconed = 0;
+  const timec = setInterval(() => {
+    seconed = seconed + 1;
+    // console.log("minutes",seconed/60);
+    // console.log("seconed",seconed%60);
+
+    console.log("Time Counter", parseInt(seconed / 60) + ":" + seconed % 60)
+    if (parseInt(seconed / 60) == time) {
+      clearInterval(timec)
+    }
+  }, 1000)
+ 
+ setTimeout(()=>{
+    clearInterval(timec)
+ },time*1000*60)
+
+}
+
+ stopClock(1)
+
 
 
 
@@ -467,4 +441,23 @@ timeCounter()
 // console.log(fun.maltiply(2));
 //console.log(fun.devide(2));
 // console.log(fun.getcount());
+
+//let myArray = [1];
+//console.log(myArray[0]); // outputs 1
+//console.log(myArray[5]); // outputs 5
+ //myArray.pop(6);
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
 
