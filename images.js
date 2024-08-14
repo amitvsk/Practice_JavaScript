@@ -18,6 +18,8 @@
 // console.log("copy object",obj2);
 // // console.log("object 3",obj3)
 
+// const { exec } = require("child_process");
+
 // function clock(){
 //     setInterval(()=>{
 //         const date=new Date();
@@ -29,14 +31,47 @@
 // }
 // clock()
 
-function stopcounter(time){
-      let seconed=0;
-    const Timec=setInterval(()=>{
-        seconed=seconed+1;
-        console.log("Time counter",parseInt(seconed/60)+":"+seconed%60);
-        if(parseInt(seconed/60)==time){
-            clearInterval(Timec)
-        }
-    },1000)
-}
-stopcounter(1)
+// function stopcounter(time){
+//       let seconed=0;
+//     const Timec=setInterval(()=>{
+//         seconed=seconed+1;
+//         console.log("Time counter",parseInt(seconed/60)+":"+seconed%60);
+//         if(parseInt(seconed/60)==time){
+//             clearInterval(Timec)
+//         }
+//     },1000)
+// }
+// stopcounter(1)
+
+// const {exec}=require('child_process');
+// const {countreset}=require('cansole');
+// const {ValiHadervalue}=require('http');
+// function play(){
+//     const filePath='C:\\Users\\user\\Documents\\Practice_JavaScript\\assets\\eminem-63310.mp3'
+//     const command=`start wmplayer "${filePath}`
+
+// }
+// exec(command,(err)=>{
+//     if(err){
+//         console.error(`Error playing sound:${err}`);
+//         return;
+        
+//     }
+//     console.log(`Audio started playing`);
+    
+// })
+let arr=[8,3,5,4,2];
+let a=arr.filter((ele)=>ele<3&&ele>5)
+console.log(a);3
+getprimes(arr);
+console.log(prime);
+
+console.log(arr.at(0));2
+console.log(arr.findLast((ele)=>ele<5));
+
+
+let arr2=[4,7,9,5]
+console.log(arr.concat(arr2));8
+
+
+console.log(arr.findIndex((ele)=>ele==3));1
