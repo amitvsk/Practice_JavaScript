@@ -11,7 +11,7 @@ let b= [1,2,3,4,5,]
 // console.log(a.filter((ele)=>ele%2!==0)); //question 5
 
 // console.log(a.filter(ele=>ele >3&&ele<5));    // question 7
-console.log(a.map(num=>num <<=a));
+console.log(a.map(num=>num >>largest));
 
 
 // console.log(a.concat(b));      // question 8
