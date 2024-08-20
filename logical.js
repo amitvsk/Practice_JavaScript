@@ -7,16 +7,17 @@ const users = [
     { id: 4, name: "Diana", email: "diana@example.com", age: 29, balance: 4000, isActive: false },
     { id: 5, name: "Eve", email: "eve@example.com", age: 35, balance: 10000, isActive: true },
   ];
-  // function user(Users) {
-  //   let check=users.filter((ele)=>ele.isActive)  //question 1
-  //   if (check) {
-  //     console.log("active users",check
-  //     );
-      
-  //   }
+  function user(Users) {
+  let result=[]
+    let check=users.filter((ele)=>ele.isActive)  //question 1
+  //   
+      result.activeuserslist=check
+      result.count=check.length
+      return result
+    }
   
-  // }
-  // console.log(user(users));
+  
+  console.log(user(users));
   
   // function balanceinquary(users) {           //question 2
   //   // console.log("total balance",users.reduce((accumulator,currentValue)=> accumulator+ currentValue.balance,0))
@@ -52,16 +53,16 @@ const users = [
   // console.log(younger(users));
   
   
-  function add(users) {
+  // function add(users) {
     
   
-  let increse=users.map((ele)=>ele.balance*10/100+ele.balance);
-            //question 5 !!!!!!!!!!!!!!!!!!!!!!!\
-  console.log(increse);
+  // let increse=users.map((ele)=>ele.balance*10/100+ele.balance);
+  //           //question 5 !!!!!!!!!!!!!!!!!!!!!!!\
+  // console.log(increse);
   
   
-  }
-  console.log(add(users));
+  // }
+  // console.log(add(users));
   
   
   
