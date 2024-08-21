@@ -130,3 +130,86 @@ const users = [
   
   
   
+
+
+
+
+
+
+
+
+
+
+
+  
+// function massage(time) {
+//   let minuet=0
+//   let second=0
+//   const  display= setInterval(() => {         //question 1
+//     second=second+1
+// console.log(parseInt(second/60)+":"+second%60);
+
+//   }, 1000);
+//   setTimeout(() => {
+//     console.log("Hello,World!");
+//     clearInterval(display)
+//   }, time*1000);
+// }
+// massage(3)
+
+
+
+// function add(a,b) {
+//   setTimeout(() => {        //question 3
+//     console.log(a+b);
+    
+//   }, 5000);
+// }
+// add(2,2)
+  
+
+
+function timmer(time) {
+  // let minuet=5
+  let second=60
+  let timea=setInterval(() => {
+    second=second-1
+    // minuet=minuet-1
+    console.log(parseInt(second%60));
+    
+  }, 1000);
+setTimeout(() => {
+  console.log("time is over");
+  clearInterval(timea)
+  
+}, time*1000);
+
+}
+
+timmer(10)
+
+
+
+
+// function multiply(a,b) {
+//   setTimeout(() => {        //question 5
+//     console.log(a*b);
+    
+//   }, 4000);
+// }
+// multiply(2,5)
+
+
+// function time(time) {
+//   let timea=setInterval(() => {
+//     let date=new Date()
+//    console.log(date.getHours()+":"+date.getMinutes()+":"+date.getSeconds());
+    
+//   }, 2000);
+//   setTimeout(() => {
+//     clearInterval(timea)
+//     console.log("time is over");
+    
+//   }, time*1000);
+// }
+// time(5)
