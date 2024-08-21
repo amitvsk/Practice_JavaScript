@@ -142,20 +142,10 @@ const users = [
 
 
   
-// function massage(time) {
-//   let minuet=0
-//   let second=0
-//   const  display= setInterval(() => {         //question 1
-//     second=second+1
-// console.log(parseInt(second/60)+":"+second%60);
-
-//   }, 1000);
-//   setTimeout(() => {
-//     console.log("Hello,World!");
-//     clearInterval(display)
-//   }, time*1000);
-// }
-// massage(3)
+setTimeout(() => {
+  console.log("hello world");      //question 1
+  
+}, 4000);
 
 
 
