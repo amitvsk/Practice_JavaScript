@@ -1475,9 +1475,9 @@ add(2,2)
   
 
 
-function timmer(time) {
+function timmer() {
   // let minuet=5
-  let second=60
+  let second=6
   let timea=setInterval(() => {
     second=second-1
     // minuet=minuet-1
@@ -1492,7 +1492,7 @@ setTimeout(() => {
 
 }
 
-timmer(10)
+timmer()
 
 
 
