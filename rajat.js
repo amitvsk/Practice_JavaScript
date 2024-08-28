@@ -707,15 +707,6 @@
 // console.log(fun.add());
 
 
-// function fetchUserData(id,callback) {
-//     setTimeout(() => {-0
-//      callback({id:id,name:"rajat",age:"25"})
-//     },5000);
-// }
-// fetchUserData(234,(userdata)=>{
-// console.log(userdata);
-// })
-
 const users = [
     { id: 1, name: "John Doe", email: "john@example.com" },
     { id: 2, name: "Jane Smith", email: "@example.comjane" },
@@ -724,68 +715,40 @@ const users = [
     { id: 5, name: "Charlie Davis", email: "charlie@example.com" }
 ];
 
-// function fetchUseridcallback(id,callback){
-//     setTimeout(() => {
-//         callback(users.find((ele)=>ele.id==id))
-//     },5000);
+function fetchUseridcallback(id,callback){
+    setTimeout(() => {
+        callback(users.find((ele)=>ele.id==id))
+    },5000);
 
-// }
-// fetchUseridcallback(4,(result)=>{
-//     console.log(result);
+}
+fetchUseridcallback(4,(result)=>{
+    console.log(result);
     
-// })
+})
 
 
-// function user(id) {
+function user(id) {
   
-// return new Promise((resolve,reject)=>{
-//     setTimeout(() => {
+return new Promise((resolve,reject)=>{
+    setTimeout(() => {
        
-//         const checkdata=users.find((ele)=>ele.id==id)
-//           if(checkdata){
-//            resolve (checkdata)
-//           }else{
-//             reject("id is not vaild")
-//           }
-//     },3000);
-// })
-// }
-// user(3).then((id)=>{
-//     console.log(id);
+        const checkdata=users.find((ele)=>ele.id==id)
+          if(checkdata){
+           resolve (checkdata)
+          }else{
+            reject("id is not vaild")
+          }
+    },3000);
+})
+}
+user(3).then((id)=>{
+    console.log(id);
     
-// }).catch((err)=>{
-// console.log(err);
+}).catch((err)=>{
+console.log(err);
 
-// })
+})
 
-function fetchUserByIdPromise(id) {
-    const users = [
-      { id: 1, name: 'John Doe' },
-      { id: 2, name: 'Jane Doe' },
-    ];
-  
-    return new Promise((resolve, reject) => {
-      const user = users.find((user) => user.id === id);
-      if (!user) {
-        reject(new Error(`User not found with id ${id}`));
-      } else {
-        resolve(user);
-      }
-    });
-  }
-  
-  async function fetchUserByIdAsync(id) {
-    try {
-      const user = await fetchUserByIdPromise(id);
-      console.log(user); // Output: { id: 1, name: 'John Doe' } or { id: 2, name: 'Jane Doe' }
-    } catch (error) {
-      console.error(error); // Output: Error message if user not found
-    }
-  }
-  
-  // Example usage:
-  fetchUserByIdAsync(1); // Output: { id: 1, name: 'John Doe' }
-  fetchUserByIdAsync(3); // Output: Error message if user not found
 
 
 
