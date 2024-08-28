@@ -1,14 +1,14 @@
 // And g
 // let a=5;
 // console.log(!a);
-//  let a=undefined;
-// truthy value non zero
+//  let a="a";
+// // truthy value non zero
 //  if (!a) {console.log("truthy");  
 //  }
 //  else {console.log("false")};
 
 // let a=0;
-// false value zero
+// // false value zero
 //  if (a) {console.log("truthy");  
 //  }
 //  else {console.log("false")};
@@ -65,9 +65,10 @@
 
 // let a=0;
 // let b=5;
-// bitwise oparetor                                                   
-// if (a~b) {console.log("true value");
-// } else{console.log("false value");}
+// // bitwise oparetor                                                   
+// if ('a~b') {console.log("true value");
+// } else{
+//   console.log("false value");}
 
 // let am=~b;
 // console.log("am",am);
@@ -125,7 +126,7 @@
 // let a=15;
 // let b=20;
  
-// [b,a]=[a, b]
+// [b,a]=[a,b]
 // console.log("a value b hai ,a=15");
 
 
@@ -170,14 +171,6 @@
 // console.log("a:", a); // Output: 10
 // console.log("b:", b); // Output: 5
 
-// let d=50;
-// let result=1;
-//  for (let index = 1; index <=5 ; index++) {
-//     console.log("index",index);
-//     result=result*index
-//     console.log("result",result);
-//  }
-//  console.log(result);
 
 // let a=5.5;
 // let b=46.2;
@@ -282,7 +275,8 @@
 //  console.log("roti lao re");  
 // }
 
-// fun1()
+// console.log(fun1(),fun2(),fun3());
+
 
 // function factorial(b) {
 //    let result=1
@@ -548,18 +542,18 @@
                 //     console.log(Object.values(grandmother));
                     
 
-  // let user= {
-  // name: "rajat",
-  //  class: "bca",
-  // age: "18",
-  // education:{
-  //     class: "bca",
-  //    age: "25"
-  // }
-  //  }
+  let user= {
+  name: "rajat",
+   class: "bca",
+  age: "18",
+  education:{
+      class: "bca",
+     age: "25"
+  }
+   }
 // shallow copy
 
-//let newuser= user
+// let newuser= user
 // newuser.name="ram"
 // let newuser=Object.assign({},user);
 // let newuser={...user}
@@ -679,16 +673,16 @@
 
 
 
-    // Simulate a network request
+//     // Simulate a network request
 // function fetchUserData(id, callback) {
 //     // Simulate a network request
 //     setTimeout(() => {
 //       // Call the callback with user data
 //       callback({ id: id, name: " rajat", age: 30 });
-//     },20000 );
+//     },2000 );
 //   }
   
-//   // Use the function with a callback
+// //   // Use the function with a callback
 //   fetchUserData(123, (userData) => {
 //     console.log(userData); // Output: { id: 123, name: "rajat", age: 30 }
 //   });
@@ -715,7 +709,7 @@
 //   setTimeout(() => {
 //     console.log(callback() +a); 
 //   }, 5000);
-//   // return    callback() +a
+//   return    callback() +a
 //  }
 //  console.log(call2(12,call1))
 
@@ -827,7 +821,7 @@
 //     // }
 //   }, 1000);
 // }
-// // timmer()
+//  timmer()
 
 
 
@@ -839,10 +833,10 @@
 //   const timec=setInterval(() => {
 //     second=second+1
 //     console.log(parseInt(second/60)+":"+second%60);
-//     // if (parseInt(second/60)==time) {
-//     //   clearInterval(timec)
+
+      
 //     }
-//   , 1000);
+//   ,1000);
 
 //   setTimeout(() => {
 //     console.log("time is over");
@@ -954,7 +948,7 @@
 
 // function login(email2,password2) {
 //   var password = "12345"
-//   let email= "sk12@gmail.com"
+//   let email= "sk123@gmail.com"
 //   if (!email2) {
 //   return "please enter your email"  
 //   }
@@ -1009,27 +1003,27 @@
 
 
 
-// function mobile(mobilenoa,passworda) {
-//   var mobileno="987654321"
-//   let password="5678"
-// if (!mobilenoa) {return "please enter your mobile no."
-// }
-// if (!passworda) { return "please enter your password"
+function mobile(mobilenoa,passworda) {
+  var mobileno="987654321"
+  let password="5678"
+if (!mobilenoa) {return "please enter your mobile no."
+}
+if (!passworda) { return "please enter your password"
   
-// }
-// return function mobilea() {
-//   if (mobileno==mobilenoa) {
-//     if (password==passworda) {
-//       return "suscesfull login"
+}
+return function mobilea() {
+  if (mobileno==mobilenoa) {
+    if (password==passworda) {
+      return "suscesfull login"
 
-//     }else {
-//       return "password is wrong"}
-//     }else {
-// return "mobile no. is not register"
-//     }
-//   }
-// }
-// console.log(mobile("987654321","5678")());
+    }else {
+      return "password is wrong"}
+    }else {
+return "mobile no. is not register"
+    }
+  }
+}
+console.log(mobile("987654321","5678")());
 
 
 // function counter() {
@@ -1178,12 +1172,43 @@
 
 
 
-let number=[1,3,2,5,4,6]
+// let number=[1,3,2,5,4,6]
 // let num=[7,8,9,0]
-// arr.push(5)
-// number.unshift(98)
+// number.push(5)
+// number.unshift(9)
 // number.pop()
 // number.shift()
+// number.sort((a,b)=>a-b)
+// console.log(number.includes(5));
+// let b=number.slice(1,4)
+// console.log(b);
+// let c=number.splice(0,3)
+// console.log(number);
+// console.log(number.join(" "));
+// console.log();
+
+
+// const words = "ramesh is a good boy";
+// const reversed = words.split("").reverse().join("");
+// console.log(reversed);
+
+
+// let words2="ramesh is good boy"
+// function   reversestring(string){
+//   if (!string) return "please enter your any string" 
+// let arr=string.split(" ")
+
+// console.log();
+
+// let am=arr.reverse();
+// console.log(am);
+
+// let c=am.join(" ")
+// return c
+//   }
+// console.log(reversestring(words2));
+
+
 
 // const newnumber= number.join()
 // console.log(number);
@@ -1307,13 +1332,13 @@ let number=[1,3,2,5,4,6]
 
 
 
-const users = [
-  { id: 1, name: "Alice", email: "alice@example.com", age: 28, balance: 5000, isActive: true },
-  { id: 2, name: "Bob", email: "bob@example.com", age: 34, balance: 3000, isActive: false },
-  { id: 3, name: "Charlie", email: "charlie@example.com", age: 22, balance: 7000, isActive: true },
-  { id: 4, name: "Diana", email: "diana@example.com", age: 29, balance: 4000, isActive: false },
-  { id: 5, name: "Eve", email: "eve@example.com", age: 35, balance: 10000, isActive: true },
-];
+// const users = [
+//   { id: 1, name: "Alice", email: "alice@example.com", age: 28, balance: 5000, isActive: true },
+//   { id: 2, name: "Bob", email: "bob@example.com", age: 34, balance: 3000, isActive: false },
+//   { id: 3, name: "Charlie", email: "charlie@example.com", age: 22, balance: 7000, isActive: true },
+//   { id: 4, name: "Diana", email: "diana@example.com", age: 29, balance: 4000, isActive: false },
+//   { id: 5, name: "Eve", email: "eve@example.com", age: 35, balance: 10000, isActive: true },
+// ];
 // function user(Users) {
 // let result=[]
 
@@ -1465,34 +1490,34 @@ const users = [
 
 
 
-function add(a,b) {
-  setTimeout(() => {        //question 3
-    console.log(a+b);
+// function add(a,b) {
+//   setTimeout(() => {        //question 3
+//     console.log(a+b);
     
-  }, 5000);
-}
-add(2,2)
+//   }, 5000);
+// }
+// add(2,2)
   
 
 
-function timmer() {
-  // let minuet=5
-  let second=6
-  let timea=setInterval(() => {
-    second=second-1
-    // minuet=minuet-1
-    console.log(parseInt(second%60));
+// function timmer() {
+//   // let minuet=5
+//   let second=6
+//   let timea=setInterval(() => {
+//     second=second-1
+//     // minuet=minuet-1
+//     console.log(parseInt(second%60));
     
-  }, 1000);
-setTimeout(() => {
-  console.log("time is over");
-  clearInterval(timea)
+//   }, 1000);
+// setTimeout(() => {
+//   console.log("time is over");
+//   clearInterval(timea)
   
-}, time*1000);
+// }, time*1000);
 
-}
+// }
 
-timmer()
+// timmer()
 
 
 
@@ -1520,11 +1545,6 @@ timmer()
   
 // }
 // time(5)
-
-
-
-
-
 
 
 

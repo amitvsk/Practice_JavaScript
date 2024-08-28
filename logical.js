@@ -1,23 +1,23 @@
 
 
-const users = [
-    { id: 1, name: "Alice", email: "alice@example.com", age: 28, balance: 5000, isActive: true },
-    { id: 2, name: "Bob", email: "bob@example.com", age: 34, balance: 3000, isActive: false },
-    { id: 3, name: "Charlie", email: "charlie@example.com", age: 22, balance: 7000, isActive: true },
-    { id: 4, name: "Diana", email: "diana@example.com", age: 29, balance: 4000, isActive: false },
-    { id: 5, name: "Eve", email: "eve@example.com", age: 35, balance: 10000, isActive: true },
-  ];
-  function user(Users) {
-  let result=[]
-    let check=users.filter((ele)=>ele.isActive)  //question 1
-  //   
-      result.activeuserslist=check
-      result.count=check.length
-      return result
-    }
+// const users = [
+//     { id: 1, name: "Alice", email: "alice@example.com", age: 28, balance: 5000, isActive: true },
+//     { id: 2, name: "Bob", email: "bob@example.com", age: 34, balance: 3000, isActive: false },
+//     { id: 3, name: "Charlie", email: "charlie@example.com", age: 22, balance: 7000, isActive: true },
+//     { id: 4, name: "Diana", email: "diana@example.com", age: 29, balance: 4000, isActive: false },
+//     { id: 5, name: "Eve", email: "eve@example.com", age: 35, balance: 10000, isActive: true },
+//   ];
+//   function user(Users) {
+//   let result=[]
+//     let check=users.filter((ele)=>ele.isActive)  //question 1
+//   //   
+//       result.activeuserslist=check
+//       result.count=check.length
+//       return result
+//     }
   
   
-  console.log(user(users));
+//   console.log(user(users));
   
   // function balanceinquary(users) {           //question 2
   //   // console.log("total balance",users.reduce((accumulator,currentValue)=> accumulator+ currentValue.balance,0))
@@ -142,10 +142,10 @@ const users = [
 
 
   
-setTimeout(() => {
-  console.log("hello world");      //question 1
+// setTimeout(() => {
+//   console.log("hello world");      //question 1
   
-}, 4000);
+// }, 4000);
 
 
 
@@ -159,38 +159,35 @@ setTimeout(() => {
   
 
 
-function timmer(time) {
-  // let minuet=5
-  let second=60
-  let timea=setInterval(() => {
-    second=second-1
-    // minuet=minuet-1
-    console.log(parseInt(second%60));
+// function timmer(){            //Question  4
+//   let count=5
+//   let timea=setInterval(() => {
+// console.log(count);
+// count--;
+//     if(count<0){
+//       clearInterval(timea)
+//       setTimeout(() => {
+//         console.log("time over");
+        
+//       }, 1000);
+//     }
     
-  }, 1000);
-setTimeout(() => {
-  console.log("time is over");
-  clearInterval(timea)
-  
-}, time*1000);
+//   },1000)
 
-}
-
-timmer(10)
-
-
-
-
-// function multiply(a,b) {
-//   setTimeout(() => {        //question 5
-//     console.log(a*b);
-    
-//   }, 4000);
 // }
-// multiply(2,5)
+// timmer()
 
 
-// function time(time) {
+function multiply(a,b) {
+  setTimeout(() => {        //question 5
+    console.log(a*b);
+    
+  }, 4000);
+}
+multiply(2,5)
+
+
+// function time(time) {       // Question 2
 //   let timea=setInterval(() => {
 //     let date=new Date()
 //    console.log(date.getHours()+":"+date.getMinutes()+":"+date.getSeconds());
@@ -202,4 +199,20 @@ timmer(10)
     
 //   }, time*1000);
 // }
-// time(5)
+// time(30)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
