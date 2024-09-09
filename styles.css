@@ -44,7 +44,7 @@
 
 .btn:active {
     background-color: #ccc;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 5px rgba(8, 228, 100, 0.815);
 }
 
 .equal {
@@ -56,7 +56,7 @@
 }
 
 .equal:hover {
-    background-color: #218838;
+    background-color: #ccc900;
 }
 
 .equal:active {
@@ -81,7 +81,7 @@
 .btn:nth-child(17),
 .btn:nth-child(18),
 .btn:nth-child(19) {
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .btn {
